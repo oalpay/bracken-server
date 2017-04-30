@@ -1,0 +1,52 @@
+<div lift="surround?with=page-wrap;at=content">
+    <div class="row image" lift="PageSnippet.image">
+        <div class="col-md-5">
+            <form class="image-upload-form" data-url="/image">
+                <div class="control-group">
+	              <img id="page-icon-image" class="image-icon img-polaroid" src="http://placehold.it/80x80">
+				</div>
+				<div class="form-group">
+	                <span class="btn btn-primary fileinput-button">
+	                            <i class="glyphicon-plus glyphicon-white"></i>
+	                            <span>Değiştir</span>
+	                                <input type="hidden" name="pageId">
+	                                <input type="file" name="II" multiple="">
+	                </span>
+				</div>
+                <div class="form-group">
+                    <div class="progress progress-striped active">
+                        <div class="bar" style="width: 0%;display:hidden;"></div>
+                    </div>
+                    <h3>Küçük Resim</h3>
+
+                    <p>Uygulamanızın küçük resmi. En iyi görününüm için 80x80px resim yüklemelisiniz.</p>
+                </div>
+            </form>
+		</div>
+        <div class="col-md-5">
+            <form class="image-upload-form" data-url="/image">
+				<div class="form-group">
+	            	<img id="page-cover-image" class="image-cover img-polaroid" src="http://placehold.it/320x367">
+				</div>
+				<div class="form-group">
+	                <span class="btn btn-primary fileinput-button">
+	                            <i class="glyphicon-plus glyphicon-white"></i>
+	                            <span>Değiştir</span>
+	                                <input type="hidden" name="pageId">
+	                                <input type="file" name="IC" multiple="">
+	                </span>
+				</div>
+                <div class="form-group">
+                    <div class="progress progress-striped active">
+                        <div class="bar" style="width: 0%;display:hidden;"></div>
+                    </div>
+                    <h3>Büyük Resim</h3>
+
+                    <p>Uygulamanızın büyük resmi.En iyi görününüm için 330x367px resim yüklemelisiniz.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+

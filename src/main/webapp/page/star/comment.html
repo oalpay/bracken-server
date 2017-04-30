@@ -1,0 +1,39 @@
+<div lift="surround?with=page-wrap;at=content">
+    <div class="row">
+		<table class="comment table-condensed" lift="CommentPaginatorSnippet.renderPage">
+          <thead>
+            <tr>
+			  <th>Zaman</th>
+              <th>Kullanıcı</th>
+              <th>Servis</th>
+              <th>Yiyecek/İçeçek</th>
+			  <th>Yorum</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="comment-entry">
+			  <td class="comment-time timeago">time</td>
+              <td class="comment-user">user</td>
+              <td class="comment-service">
+				  <div class="progress">
+				  	<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"/>
+				  </div>
+			  </td>
+              <td class="comment-food">
+				  <div class="progress">
+				  	<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"/>
+				  </div>
+			  </td>
+			  <td class="comment-text">text</td>
+            </tr>         
+          </tbody>
+		</table>
+		<div lift="CommentPaginatorSnippet.paginate">
+			<ul class="pagination">
+				<nav:prev></nav:prev><nav:allpages></nav:allpages><nav:next></nav:next>
+			</ul>
+		</div>
+   </div>
+</div>
+
+

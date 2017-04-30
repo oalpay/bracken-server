@@ -1,0 +1,53 @@
+<div lift="surround?with=content-wrap;at=content">
+    <div class="row image" lift="ContentSnippet.images">
+        <div class="col-md-5">
+            <form class="image-upload-form" data-url="/image">
+				<div class="control-group">
+				  <span class="glyphicon glyphicon-remove-circle"></span>
+	              <img class="image-icon img-polaroid" src="http://placehold.it/80x80">
+				</div>
+                <div class="form-group">
+	                <span class="btn btn-primary fileinput-button">
+	                            <span class="glyphicon glyphicon-plus"></span>
+	                            <span>Değiştir</span>
+	                                <input type="hidden" name="contentId">
+	                                <input type="file" name="II" multiple="">
+	                </span>
+				</div>
+                <div class="form-group">
+                    <div class="progress progress-striped active">
+                        <div class="bar" style="width: 0%;display:hidden;"></div>
+                    </div>
+                    <h3>Küçük Resim</h3>
+
+                    <p>İçeriğinizin küçük resmi. En iyi görününüm için 80x80px resim yüklemelisiniz.</p>
+                </div>
+            </form>
+		</div>
+        <div class="col-md-5">
+            <form class="image-upload-form" data-url="/image">
+                <div class="form-group">
+	            	<img class="image-cover img-polaroid" src="http://placehold.it/320x416">
+				</div>
+                <div class="form-group">
+	                <span class="btn btn-primary fileinput-button">
+	                            <i class="glyphicon-plus glyphicon-white"></i>
+	                            <span>Değiştir</span>
+	                                <input type="hidden" name="contentId">
+	                                <input type="file" name="IC" multiple="">
+	                </span>
+				</div>
+                <div class="form-group">
+                    <div class="progress progress-striped active">
+                        <div class="bar" style="width: 0%;display:hidden;"></div>
+                    </div>
+                    <h3>Büyük Resim</h3>
+
+                    <p>İçeriğinizin büyük resmi.En iyi görününüm için 330x416px resim yüklemelisiniz.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+	
+</div>
+

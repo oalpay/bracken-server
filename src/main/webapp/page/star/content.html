@@ -1,0 +1,62 @@
+<div lift="surround?with=page-wrap;at=content">
+	<div class="row" lift="PageSnippet.linkToCreateContent">
+		<p>
+			<a class="btn btn-success content-add" href="#"><i class="glyphicon glyphicon-plus-sign glyphicon-white"></i>Yeni içerik ekle</a>
+	    </p>
+	</div>
+    <div class="row">
+		<table class="table table-condensed" lift="ContentPaginatorSnippet.renderPage">
+          <thead>
+            <tr>
+			  <th>Sıra</th>
+              <th></th>
+              <th>İsim</th>
+              <th>Açıklama</th>
+			  <th>Fiyat</th>
+			  <th>Kategori</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="content-entry">
+			  <td class="content-order">order</td>
+              <td><a href="#" class="content-image-edit"><img src="http://placehold.it/80x80" class="image-icon"></a></td>
+              <td class="content-name">name</td>
+              <td class="content-description">description</td>
+			  <td class="content-price">price</td>
+			  <td class="content-category">category</td>
+			  <td>
+				<fieldset id="view_button_set">
+					<a class="btn btn-primary content-edit" href="#"><i class="glyphicon glyphicon-edit glyphicon-white"></i></a>
+					<a class="btn btn-danger content-delete-button" data-toggle="modal" href="#deleteModel"><i class="glyphicon glyphicon-minus-sign glyphicon-white"></i></a>
+				</fieldset>
+				<!-- Delete confirm model -->
+				<div class="modal fade" id="deleteModel" tabindex="-1" role="dialog" aria-labelledby="Delete Confirm" aria-hidden="true">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+					    <div class="modal-header">
+					      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					      <h4 class="modal-title">Emin misiniz?</h4>
+					    </div>
+					    <div class="modal-body">
+					        <p>Silme işleminin geri dönüşü olmayacaktır</p>
+					    </div>
+					    <div class="modal-footer">
+			  	          <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
+			  	          <button type="button" class="btn btn-primary content-delete-confirm-button">Sil</button>
+					    </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+			  </td>
+            </tr>         
+          </tbody>
+		</table>
+		<div lift="ContentPaginatorSnippet.paginate">
+			<ul class="pagination">
+				<nav:prev></nav:prev><nav:allpages></nav:allpages><nav:next></nav:next>
+			</ul>
+		</div>
+   </div>
+</div>
+
+

@@ -1,0 +1,47 @@
+<div lift="surround?with=default;at=content">
+	<div class="row well page" lift="Pages.all">
+		<div class="col-sm-8 col-md-4 page-entry">
+		    <div class="thumbnail">
+		      <img class="image-cover" src="http://placehold.it/320x367" alt="320x367">
+		      <div class="caption">
+		        <h3 class="page-name">Thumbnail label</h3>
+		        <p><a class="btn btn-primary goto-page">Aç</a> <a data-toggle="modal" href="#deleteModel" class="btn btn-danger page-delete-button">Sil</a></p>
+		      </div>
+		    </div>
+			<!-- Delete confirm model -->
+			<div class="modal fade" id="deleteModel" tabindex="-1" role="dialog" aria-labelledby="Delete Confirm" aria-hidden="true">
+				<div class="modal-dialog">
+				  <div class="modal-content">
+				    <div class="modal-header">
+				      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				      <h4 class="modal-title">Emin misiniz?</h4>
+				    </div>
+				    <div class="modal-body">
+				        <p>Silme işleminin geri dönüşü olmayacaktır</p>
+				    </div>
+				    <div class="modal-footer">
+		  	          <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
+		  	          <button type="button" class="btn btn-primary page-delete-confirm-button">Sil</button>
+				    </div>
+				  </div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+		 </div>
+		 <div class="col-sm-8 col-md-4">
+		     <div class="thumbnail">
+		       <img class="image-cover" src="http://placehold.it/320x367" alt="320x367">
+		       <div class="caption" style="height:117px">
+				 <form class="form-inline" lift="Pages.create?form=post">
+					 <div class="form-group">
+					     <label class="sr-only" for="name">Name</label>
+						 <input type="text" name="name" id="name" class="page-name form-control" placeholder="isim"/>
+					 </div>
+		         	<input type="submit" value="Yarat" class="btn btn-primary"/>
+			 	</form>
+		       </div>
+		     </div>
+		 </div>
+	</div>
+</div>
+
+

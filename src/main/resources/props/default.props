@@ -1,0 +1,8 @@
+mail.smtp.starttls.enable=true
+mail.smtp.ssl.enable=true
+mail.smtp.host=smtp.gmail.com
+mail.smtp.port=465
+mail.smtp.auth=true
+mail.smtp.user=bilgi@brackenapp.com
+mail.smtp.pass=maca2b2c2
+mail.debug=true

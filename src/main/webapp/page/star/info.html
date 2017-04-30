@@ -1,0 +1,94 @@
+<div lift="surround?with=page-wrap;at=content">
+    <div class="row info">
+        <form lift="PageSnippet.edit?form=post" class="form-horizontal" role="form" >
+            <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputName">İsim</label>
+                <div class="col-lg-4">
+                    <input class="form-control" type="text" id="inputName" placeholder="İsim">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputDescription">Açıklama</label>
+
+                <div class="col-lg-4">
+                    <textarea class="form-control" rows="5" id="inputDescription" placeholder="Açıklama"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputCurrency">Döviz</label>
+
+                <div class="col-lg-4">
+                    <input class="form-control" type="text" id="inputCurrency" placeholder="$">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Yer</label>
+                <div class="col-lg-8">
+					<div class="form-inline">
+						<div class="form-group">
+	                    	<input class="form-control" type="text" id="pageLatitude" placeholder="Enlem">
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="text" id="pageLongitude" placeholder="Boylam">
+						</div>
+						<div class="form-group">
+	                    	<a href="#pageMapModal" role="button" class="btn btn-primary" data-toggle="modal">
+								<span class="glyphicon glyphicon-search"></span></a>
+						</div>
+					</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-offset-2 col-lg-10">
+                    <button type="submit" class="btn btn-primary">Kaydet</button>
+                </div>
+            </div>
+		</form>
+		<form lift="form.ajax?class=form-horizontal">
+	        <div class="form-group" lift="PageSnippet.qrCode">
+	            <label class="col-lg-2 control-label" for="inputDescription">Masa için kod</label>
+	            <div class="col-lg-8">
+					<div class="form-inline">
+						<div class="form-group">
+	                		<input class="form-control" type="text" id="inputTable" placeholder="Masa numarası">
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary">Üret</button>
+						</div>
+					</div>
+	            </div>
+				<div class="form-group">
+					 <div class="col-lg-offset-2 col-lg-8" id="qrCode">
+					 </div>
+				</div>
+	        </div>
+		</form>
+		
+		<div id="pageMapModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<div class="form-inline">
+					<div class="form-group">
+					    <label class="sr-only" for="geocoderAddress">Geocoder Address</label>
+					    <input class="form-control" id="geocoderAddress" type="text" placeholder="Adres veya yer adı...">
+					</div>
+					<button id="geocoderSearch" class="btn btn-primary" type="button" data-loading-text="Aranıyor..">Ara</button>
+				</div>
+		      </div>
+              <div class="modal-body">
+                  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+                  <div id="mapCanvas"></div>
+              </div>
+              <div class="modal-footer">
+                  <button class="btn" data-dismiss="modal" aria-hidden="true">Kapat</button>
+                  <button id="mapLocationSave" class="btn btn-primary" data-dismiss="modal">Yeri seç</button>
+              </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+    <div>
+</div>
+
+

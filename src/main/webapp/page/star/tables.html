@@ -1,0 +1,86 @@
+<div lift="surround?with=page-wrap;at=content">
+	<div lift="comet?type=TabsActor">
+		<div class="row tabs-header">
+			<div class="col-sm-offset-3 col-sm-3">
+				<div class="panel panel-danger">
+				  <div class="panel-heading">
+				    <h3 class="panel-title"><span class="glyphicon glyphicon-bell"></span> Received: <span id="cartReceivedTotal"></span></h3>
+				  </div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="panel panel-warning">
+				  <div class="panel-heading">
+				    <h3 class="panel-title"><span class="glyphicon glyphicon-check"></span> Processing: <span id="cartProccesingTotal"></span></h3>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<div class="row tabs">
+			<div id="tabsContainer">
+				<div class="tab panel panel-primary">
+					<div class="btn-group pull-left">
+						<button type="button" class="btn btn-danger checkout-tab-button">
+							<span class="glyphicon glyphicon-new-window"></span>
+						</button>
+					</div>
+					<div class="btn-group pull-right" data-toggle="buttons">
+					  <label class="btn btn-primary show-carts-button active">
+					    <input type="radio" name="visibility">
+						<span class="glyphicon glyphicon-eye-open"></span>
+					  </label>
+					  <label class="btn btn-primary hide-carts-button">
+					    <input type="radio" name="visibility">
+						<span class="glyphicon glyphicon-eye-close"></span>
+					  </label>
+					</div>
+					<div class="panel-heading">
+						<h3 class="panel-title tab-name">#
+						</h3>
+						<h3 class="panel-title tab-balance">
+							<span class="owe">99.99</span>/<span class="dept">99.99</span><span class="currency">$</span>
+						</h3>
+					</div>
+					<div class="carts panel-body">
+						<div class="panel-group" id="cartsTab">
+							<div class="panel cart">
+							  <div class="panel-heading">
+							    <h4 class="panel-title">
+								  <span class="glyphicon glyphicon-bell cart-received"></span>
+								  <span class="glyphicon glyphicon-check cart-processing"></span>
+								  <span class="glyphicon glyphicon-send cart-delivered"></span>
+								  <span class="glyphicon glyphicon-remove cart-canceled"></span>
+							      <a class="accordion-toggle collapsed date timeago" data-toggle="collapse" href="#cart">
+							      </a>
+							    </h4>
+							  </div>
+							  <div id="cart" class="panel-collapse collapse in">
+							    <div class="panel-body">
+									<p>
+									  <div class="item">
+										  <span class="quantity"></span>
+										  <span class="item-name"></span>
+									  </div>
+							 	 	</p>
+								  <button type="button" class="btn btn-default btn-lg process-cart-button">
+								    <span class="glyphicon glyphicon-check"></span>
+								  </button>
+								  <button type="button" class="btn btn-default btn-lg deliver-cart-button">
+								    <span class="glyphicon glyphicon-send"></span>
+								  </button>
+								  <button type="button" class="btn btn-default btn-lg cancel-cart-button">
+								    <span class="glyphicon glyphicon-remove"></span>
+								  </button>
+							    </div>
+							  </div>
+							</div>
+						</div>        
+					</div>
+				 </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
